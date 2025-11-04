@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Report — Personal Finance</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Personal Finance</div>
+      <nav>
+        <a class="nav-item" href="./index.html">Dashboard</a>
+        <a class="nav-item" href="./transactions.html">Transactions</a>
+        <a class="nav-item active" href="./report.html">Report</a>
+        <a class="nav-item" href="./settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Monthly Report</h1>
+      </header>
+
+      <div class="card">
+        <div style="display:flex;gap:10px;align-items:center">
+          <input id="month" type="month" class="input" />
+          <button id="gen" class="btn primary">Generate</button>
+        </div>
+        <div id="report" style="margin-top:12px" class="muted"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./report.js"></script>
+</body>
+</html>

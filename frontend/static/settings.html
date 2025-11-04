@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Settings — Personal Finance</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Personal Finance</div>
+      <nav>
+        <a class="nav-item" href="./index.html">Dashboard</a>
+        <a class="nav-item" href="./transactions.html">Transactions</a>
+        <a class="nav-item" href="./report.html">Report</a>
+        <a class="nav-item active" href="./settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Settings</h1>
+      </header>
+
+      <div class="card">
+        <h4>Preferences</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label><input id="pref-compact" type="checkbox" /> Compact table layout</label>
+          <label>Default currency:
+            <select id="pref-currency" class="input" style="width:160px;display:inline-block;margin-left:8px">
+              <option value="INR">INR</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </label>
+          <button id="save-settings" class="btn primary">Save</button>
+          <div id="settings-msg" class="muted"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./settings.js"></script>
+</body>
+</html>

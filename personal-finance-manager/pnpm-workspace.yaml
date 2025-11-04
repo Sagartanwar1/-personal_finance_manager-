@@ -1,0 +1,4 @@
+workspaceLayout: 
+  packages:
+    - 'apps/*'
+    - 'prisma'

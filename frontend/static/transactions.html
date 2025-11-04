@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Transactions — Personal Finance</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Personal Finance</div>
+      <nav>
+        <a class="nav-item" href="./index.html">Dashboard</a>
+        <a class="nav-item active" href="./transactions.html">Transactions</a>
+        <a class="nav-item" href="./report.html">Report</a>
+        <a class="nav-item" href="./settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Transactions</h1>
+      </header>
+
+      <div class="card">
+        <h4>All Transactions</h4>
+        <table class="tx-table" id="tx-table">
+          <thead><tr><th>ID</th><th>Type</th><th>Category</th><th>Amount</th><th>Date</th></tr></thead>
+          <tbody id="tx-list"></tbody>
+        </table>
+        <div id="tx-msg" class="muted"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./transactions.js"></script>
+</body>
+</html>
